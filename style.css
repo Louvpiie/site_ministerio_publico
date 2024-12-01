@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+*{
+    margin:0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+a { color: inherit;} 
+
+.topo {
+    width: 100%;
+    height: 30vh;
+    background-image: url('Imagens/MInisterio-publico.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(50%);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #6D4F38;
+    font-weight: 700;
+    padding-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+nav ul li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #6D4F38;
+    transition: width 0.3s ease;
+}
+
+nav ul li:hover::after {
+    width: 100%;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.title-section {
+    flex: 1;
+    text-align: center;
+    color: #352B22;
+}
+
+.title-section h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.image-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.image-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.highlight {
+    background-color: #6D4F38;
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    color: #FAEDDF;
+}
+
+.highlight p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input, textarea {
+    width: 50%;
+    padding: 10px;
+    margin: 5px 0 20px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #F7F0E8;
+    color: rgb(77, 57, 40);
+    border: none;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 25%;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(77, 57, 40);
+    color: #F7F0E8;
+}
+
+input[type="submit"]:active {
+    background-color: #f7f0e881;
+    color: rgb(77, 57, 40);
+}
+
+.sucesso {
+    color: rgb(77, 57, 40);
+    background-color: #F7F0E8;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 20px;
+    display: none;
+}
+
+body{
+    font-family: "Playfair Display", system-ui;
+    font-size: 100%;
+    color: #352B22;
+    background: #F7F0E8;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.assunto{
+    font-size: 100%;
+    margin: 25px;
+    padding: 10px;
+}
+
+footer {
+    background-color: #4D4135;
+    color: rgb(249, 246, 243);
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.footer-content p {
+    max-width: 600px;
+    margin: 0 auto 20px;
+    line-height: 1.6;
+}
+
+.socials {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.socials li {
+    display: inline;
+}
+
+.socials li a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.socials li a:hover img {
+    transform: scale(1.1);
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #4D4135;
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+.footer-bottom a {
+    color: #f2bb5a;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+.socials li a:hover img {
+    transform: scale(1.1);
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #bbbbbb;
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+.footer-bottom a {
+    color: #f2bb5a;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
